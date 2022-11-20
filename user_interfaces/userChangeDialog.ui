@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog_User_Change</class>
+ <widget class="QDialog" name="Dialog_User_Change">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>472</width>
+    <height>282</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="btnTableChange">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>80</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Выбрать пользователя</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnNewUser">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>230</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Создать нового
+пользователя</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="userIdSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>131</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>999999999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Введите ID вашего
+пользователя:</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>311</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Имя</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Возраст</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

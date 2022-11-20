@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>231</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Имя:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="nameLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Рост:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="heightLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Вес:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="weightLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>ИМТ:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLabel" name="bmiLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Возраст:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="ageLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btnHistory">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>История
+тренировок</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnWeightEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>150</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отметить вес</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDataReset">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Удалить
+пользователя</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="addLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>430</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Здесь могла быть ваша реклама!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnStartTraining">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>290</y>
+      <width>191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Начать Тренировку</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUserEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>180</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Редактировать
+пользователя</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnUserChange">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>240</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Сменить
+пользователя</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="trainingWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>311</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="btnEndTraining">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>110</y>
+       <width>221</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Закончить
+тренировку</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>311</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="trainingLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="exercLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Упражнение:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="exercDataLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="apprLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Подходов:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="apprDataLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="exercInApprLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Упр. в подходе:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="exercInApprDataLabel">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>None</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btnWeightHistory">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>История
+взвешиваний</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
